@@ -17,7 +17,7 @@ def get_engine():
     return create_engine(f"mysql+pymysql://{user}:{password}@{host}:{port}/{db}")
 
 
-STATION_PATH = Path("station.csv")
+STATION_PATH = Path("dump/station.csv")
 SQL_PATH = Path("dump/china_data_insert.sql")
 FIGURE_DIR = Path("Figure")
 FIGURE_PNG_DIR = FIGURE_DIR / "png"
